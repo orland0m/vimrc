@@ -1,16 +1,13 @@
 #!/bin/bash
 
-function RequireBinary {
-    echo "ERROR: $1 is not installed"
-    exit 1
-}
-
 function SuggestBinary {
-    echo "WARN: it is adviced to install $1"
+    echo "WARN: $1 is missing from the system"
 }
 
-command -v astyle --help >/dev/null 2>&1 || RequireBinary "astyle"
-command -v nvim --help >/dev/null 2>&1 || SuggestBinary "nvim"
+# This is a list of recommended tools, not all of them are vim related
+command -v astyle --help &>/dev/null || SuggestBinary "astyle"
+command -v nvim --help &>/dev/null || SuggestBinary "nvim"
+command -v ack --help &>/dev/null || SuggestBinary "ack"
 
 cd ~/.vim_runtime
 
