@@ -9,6 +9,7 @@ command -v astyle --help &>/dev/null || SuggestBinary "astyle"
 command -v nvim --help &>/dev/null || SuggestBinary "nvim"
 command -v ack --help &>/dev/null || SuggestBinary "ack"
 
+mkdir -p ~/.config/nvim
 cd ~/.vim_runtime
 
 echo 'set runtimepath+=~/.vim_runtime
@@ -22,5 +23,7 @@ try
 source ~/.vim_runtime/my_configs.vim
 catch
 endtry' > ~/.vimrc
+
+echo 'source ~/.vimrc' > ~/.config/nvim/init.vim 
 
 echo "Installed the Ultimate Vim configuration successfully! Enjoy :-)"
