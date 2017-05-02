@@ -70,9 +70,6 @@
 [submodule "sources/vim-yankstack"]
 	path = sources/vim-yankstack
 	url = https://github.com/maxbrunsfeld/vim-yankstack.git
-[submodule "sources/vim-colorschemes"]
-	path = sources/vim-colorschemes
-	url = https://github.com/flazz/vim-colorschemes.git
 [submodule "sources/vim-markdown"]
 	path = sources/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown.git
