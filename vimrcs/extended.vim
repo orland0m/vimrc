@@ -30,8 +30,6 @@ set guioptions-=L
 " Colorscheme
 set background=dark
 colorscheme solarized
-:set foldcolumn=0
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Fast editing and reloading of vimrc configs
