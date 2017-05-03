@@ -12,7 +12,7 @@ This is a fork from [amix/vimrc](https://github.com/amix/vimrc). Note that most 
 ## How to install orland0m/vimrc?
 Similar to the original source, this includes a lot of great plugins, configurations and color schemes that make Vim a lot better. To install it simply do following:
 
-	git clone --recursive -j8 https://github.com/orland0m/vimrc.git ~/.vim_runtime
+	git clone --recursive -j8 git@github.com:orland0m/vimrc.git ~/.vim_runtime
 	sh ~/.vim_runtime/install_awesome_vimrc.sh
 
 ## How to update to latest version?
