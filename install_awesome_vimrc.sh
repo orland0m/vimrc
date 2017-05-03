@@ -9,6 +9,7 @@ command -v astyle --help &>/dev/null || SuggestBinary "astyle"
 command -v nvim --help &>/dev/null || SuggestBinary "nvim"
 command -v ack --help &>/dev/null || SuggestBinary "ack"
 command -v ctags --help &>/dev/null || SuggestBinary "ctags"
+command -v gotags --help &>/dev/null || SuggestBinary "gotags"
 
 mkdir -p ~/.config/nvim
 cd ~/.vim_runtime
