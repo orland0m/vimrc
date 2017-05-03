@@ -4,7 +4,7 @@ function SuggestBinary {
     echo "WARN: $1 is missing from the system"
 }
 
-# This is a list of recommended tools, not all of them are vim related
+# This is a list of required tools, some plugins won't be able to load if they are missing 
 command -v astyle --help &>/dev/null || SuggestBinary "astyle"
 command -v nvim --help &>/dev/null || SuggestBinary "nvim"
 command -v ack --help &>/dev/null || SuggestBinary "ack"
