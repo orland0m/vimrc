@@ -25,9 +25,6 @@
 [submodule "sources/vim-snippets"]
 	path = sources/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
-[submodule "sources/vim-expand-region"]
-	path = sources/vim-expand-region
-	url = https://github.com/terryma/vim-expand-region.git
 [submodule "sources/ctrlp.vim"]
 	path = sources/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim.git
@@ -40,9 +37,6 @@
 [submodule "sources/vim-scala"]
 	path = sources/vim-scala
 	url = https://github.com/derekwyatt/vim-scala.git
-[submodule "sources/tlib"]
-	path = sources/tlib
-	url = https://github.com/vim-scripts/tlib.git
 [submodule "sources/vim-gitgutter"]
 	path = sources/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
@@ -97,3 +91,6 @@
 [submodule "sources/numbers.vim"]
 	path = sources/numbers.vim
 	url = git@github.com:myusuf3/numbers.vim.git
+[submodule "sources/tlib_vim"]
+	path = sources/tlib_vim
+	url = git@github.com:tomtom/tlib_vim.git
