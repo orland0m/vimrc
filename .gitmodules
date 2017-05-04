@@ -24,7 +24,7 @@
 	url = https://github.com/honza/vim-snippets.git
 [submodule "sources/ctrlp.vim"]
 	path = sources/ctrlp.vim
-	url = https://github.com/kien/ctrlp.vim.git
+	url = git@github.com:ctrlpvim/ctrlp.vim.git 
 [submodule "sources/vim-repeat"]
 	path = sources/vim-repeat
 	url = https://github.com/tpope/vim-repeat.git
