@@ -11,21 +11,12 @@ command -v ack --help &>/dev/null || SuggestBinary "ack"
 command -v ctags --help &>/dev/null || SuggestBinary "ctags"
 command -v gotags --help &>/dev/null || SuggestBinary "gotags"
 echo "INFO: install powerline-fonts"
+echo "INFO: In Mac OS use font 18pt Robot Mono Light for Powerline"
 
 mkdir -p ~/.config/nvim
 cd ~/.vim_runtime
 
-echo 'set runtimepath+=~/.vim_runtime
-
-source ~/.vim_runtime/vimrcs/basic.vim
-source ~/.vim_runtime/vimrcs/filetypes.vim
-source ~/.vim_runtime/vimrcs/plugins_config.vim
-source ~/.vim_runtime/vimrcs/extended.vim
-
-try
-source ~/.vim_runtime/my_configs.vim
-catch
-endtry' > ~/.vimrc
+echo 'source ~/.vim_runtime/vimrc' > ~/.vimrc
 
 echo 'source ~/.vimrc' > ~/.config/nvim/init.vim
 
