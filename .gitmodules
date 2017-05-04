@@ -94,3 +94,6 @@
 [submodule "sources/tlib_vim"]
 	path = sources/tlib_vim
 	url = git@github.com:tomtom/tlib_vim.git
+[submodule "sources/vim-expand-region"]
+	path = sources/vim-expand-region
+	url = git@github.com:orland0m/vim-expand-region.git
