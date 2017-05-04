@@ -1,9 +1,6 @@
 [submodule "sources/mru.vim"]
 	path = sources/mru.vim
 	url = https://github.com/vim-scripts/mru.vim.git
-[submodule "sources/peaksea"]
-	path = sources/peaksea
-	url = https://github.com/vim-scripts/peaksea.git
 [submodule "sources/ack.vim"]
 	path = sources/ack.vim
 	url = https://github.com/mileszs/ack.vim.git
