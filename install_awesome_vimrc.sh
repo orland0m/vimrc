@@ -1,20 +1,21 @@
 #!/bin/bash
 
-function SuggestBinary {
-    echo "WARN: $1 is missing from the system"
+function SuggestBinary() {
+    command -v $1 --help &>/dev/null || echo "WARN: $1 is missing from the system, you should install it for better vimrc integration"
 }
 
-# This is a list of required tools, some plugins won't be able to load if they are missing
-command -v astyle --help &>/dev/null || SuggestBinary "astyle"
-command -v nvim --help &>/dev/null || SuggestBinary "nvim"
-command -v ack --help &>/dev/null || SuggestBinary "ack"
-command -v ctags --help &>/dev/null || SuggestBinary "ctags"
-command -v gotags --help &>/dev/null || SuggestBinary "gotags"
+# This is a list of required tools, some plugins won't be able to load properly if they are missing
+SuggestBinary "astyle"
+SuggestBinary "nvim"
+SuggestBinary "ack"
+SuggestBinary "ctags"
+SuggestBinary "gotags"
+SuggestBinary "scalafmt"
+SuggestBinary "gofmt"
 echo "INFO: install powerline-fonts"
 echo "INFO: In Mac OS use font 18pt Robot Mono Light for Powerline"
 
 mkdir -p ~/.config/nvim
-cd ~/.vim_runtime
 
 echo 'source ~/.vim_runtime/vimrc' > ~/.vimrc
 
