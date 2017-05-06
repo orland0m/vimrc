@@ -14,6 +14,7 @@ SuggestBinary "scalafmt"
 SuggestBinary "gofmt"
 echo "INFO: install powerline-fonts"
 echo "INFO: In Mac OS use font 18pt Robot Mono Light for Powerline"
+echo "INFO: In mate-terminal use font Cousin for powerline regular"
 
 mkdir -p ~/.config/nvim
 
