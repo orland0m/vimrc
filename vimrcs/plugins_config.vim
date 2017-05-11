@@ -134,3 +134,16 @@ let g:airline_powerline_fonts = 1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 cnoreabbrev Ack Ack!
 nnoremap <Leader>a :Ack!<Space>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => numbers.vim
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:numbers_exclude = ['unite', 'tagbar', 'startify', 'gundo', 'vimshell', 'w3m', 'nerdtree', 'qf']
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-anyfold
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+filetype plugin indent on
+syntax on
+let anyfold_activate=1
+set foldlevel=1

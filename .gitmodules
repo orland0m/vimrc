@@ -82,9 +82,6 @@
 [submodule "sources/vimagit"]
 	path = sources/vimagit
 	url = https://github.com/jreybert/vimagit
-[submodule "sources/promptline.vim"]
-	path = sources/promptline.vim
-	url = git@github.com:edkolev/promptline.vim.git
 [submodule "sources/numbers.vim"]
 	path = sources/numbers.vim
 	url = git@github.com:myusuf3/numbers.vim.git
@@ -94,3 +91,6 @@
 [submodule "sources/vim-expand-region"]
 	path = sources/vim-expand-region
 	url = git@github.com:orland0m/vim-expand-region.git
+[submodule "sources/vim-anyfold"]
+	path = sources/vim-anyfold
+	url = https://github.com/pseewald/vim-anyfold
