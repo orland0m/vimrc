@@ -3,6 +3,7 @@ autocmd BufNewFile,BufRead *\.cpp|*\.c call MapFormatCommand("cpp")
 autocmd BufNewFile,BufRead *\.java call MapFormatCommand("java")
 autocmd BufNewFile,BufRead *\.go call MapFormatCommand("go")
 autocmd BufNewFile,BufRead *\.scala call MapFormatCommand("scala")
+autocmd BufNewFile,BufRead *\.json call MapFormatCommand("json")
 
 " Astyle options
 " >> Java & C common:
@@ -23,5 +24,7 @@ function MapFormatCommand(type)
         map <F7> :! gofmt -s -l -w %<CR><CR>
     elseif a:type =~ "scala"
         map <F7> :! scalafmt -i --non-interactive --quiet -f %<CR><CR>
+    elseif a:type =~ "json"
+        map <F7> :%! python -m json.tool<CR>
     endif
 endfunction
