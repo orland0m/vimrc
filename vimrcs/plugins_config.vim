@@ -145,5 +145,5 @@ let g:numbers_exclude = ['unite', 'tagbar', 'startify', 'gundo', 'vimshell', 'w3
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 filetype plugin indent on
 syntax on
-let anyfold_activate=1
+autocmd Filetype * AnyFoldActivate
 set foldlevel=3
