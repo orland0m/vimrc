@@ -97,3 +97,6 @@
 [submodule "sources/vim-ansible-yaml.git"]
 	path = sources/vim-ansible-yaml.git
 	url = https://github.com/chase/vim-ansible-yaml.git
+[submodule "sources/vim-ruby"]
+	path = sources/vim-ruby
+	url = git@github.com:vim-ruby/vim-ruby.git
